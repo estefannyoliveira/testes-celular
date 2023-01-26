@@ -1,48 +1,111 @@
 @charset "utf-8";
 
-/* VERSÃO MOBILE FIRTST*/
+
+
+:root{
+    --cor01: #b4764f;
+    --cor02: #cd966c;
+    --cor03: #9a5833;
+    --cor04: #e6b68b;
+    --corfundo: #f1eae2;
+}
+
 *{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    box-sizing: border-box;
 }
 
-html{
+body, html {
+    background-color:var(--corfundo);
+}
+
+header{
+    background-color: var(--cor01);
+    color: white;
+}
+
+header > h1{
+    padding: 20px;
+    text-align: center;
+}
+#burguer{
+    display: block;
+    background-color: var(--cor03);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#burguer:hover{
+    background-color: var(--corfundo);
+    color: black;
+}
+
+
+
+menu{
+    display: none;
+    background-color: var(--cor02) ;
     
-    height: 100vh;
 }
 
-body{
-    background: black url("../imagens/back-phone.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
+menu ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+   display: block;
+   padding: 10px;
+   text-decoration: none;
+   text-align: center;
+   font-weight: bold;
+
+   color: white;
+   border-top: 2px solid ;
+   cursor: pointer;  
+}
+
+menu > ul > li a:hover{
+    background-color: #e6b68b;
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.866);
-    width: 90vw;
+    min-width: 400px;
+    max-width: 800px;
+
+
+    background-color: white;
     margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
     padding: 10px;
+    border-radius: 10px;
+    
+    
 }
 
-h1{
-    font-size: 1.3em;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.415);
-}
-
-img{
-    display: block;
+main img{
+    width: 100%;
     margin: auto;
+
+    margin-bottom: 10px;
+
+    border-radius: 20px;
 }
 
-img#phone {display: block;}
-img#tablet {display: none;}
-img#print{display: none;}
-img#pc {display: none;}
-img#tv{display: none;}
+article > h2{
+    padding-bottom: 20px;
+    
+}
+
+article{
+    margin: 0px 20px 0px 20px ;
+}
+
+article p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    
+   
+}
+
